@@ -1,9 +1,14 @@
 import Header from "../../components/Header/Header"
+import Hero from "./Hero/Hero"
+import './Home.css'
 
 function Home() {
   return (
     <>
-      <Header />
+    <section className="home-section">
+    <Header />
+    <Hero />
+    </section>
     </>
   )
 }
