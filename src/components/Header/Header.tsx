@@ -2,6 +2,7 @@ import Button, { ButtonProps} from '@mui/material/Button';
 import { styled }from '@mui/material/styles';
 import { blue } from '@mui/material/colors';
 import { FaLongArrowAltRight } from "react-icons/fa";
+import Navigation from '../Navigation/Navigation';
 import './Header.css'
 import logo from '../../assets/logo.png'
 
@@ -16,21 +17,29 @@ const HeaderCta = styled(Button)<ButtonProps>(({ theme }) => ({
   }
 }));
 
+const navLinks = [
+  { to: '/', label: "Home" },
+  { to: '/membership', label: "Membership" },
+  { to: '/about', label: "About Us" },
+  { to: '/sign', label: "Sign In" }
+]
+
+
 function Header() {
   return (
     <>
       <nav className="header-container">
         <div className="header-logo">
-            <img src={logo} alt="Logo" />
+          <img src={logo} alt="Logo" />
         </div>
         <div className="header-links">
             <ul className="links-items">
-                <li><a href="#" >Membership</a></li>
-                <li><a href="#" >About Us</a></li>
-                <li><a href="#" >Testimonials</a></li>
-                <li><a href="#" >Sign In</a></li>
+            {
+              navLinks.map(navLink => 
+              <Navigation to = {navLink.to} key={navLink.label} label= {navLink.label} />)
+            }
             </ul>
-            <HeaderCta variant="contained"  component="a"  href="#" sx={{ textTransform:  'capitalize'}}>Get Started <FaLongArrowAltRight />
+            <HeaderCta variant="contained"  component="a" href="#" sx={{ textTransform:  'capitalize'}}>Get Started <FaLongArrowAltRight />
             </HeaderCta>
         </div>
       </nav>

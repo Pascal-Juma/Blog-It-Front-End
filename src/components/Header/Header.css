@@ -31,3 +31,9 @@
   font-weight: 400;
   font-family: var(--primary-font);
 }
+.links-items li a:hover{
+  color: var(--color-blue);
+}
+.active-link{
+  color: var(--color-blue)!important;
+}
