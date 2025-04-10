@@ -9,6 +9,10 @@
 html {
   font-size: 62.5%;
 }
+html,body{
+  overflow-x: hidden;
+  width: 100%;
+}
 body {
   font-size: 1.6rem;
 }
@@ -23,6 +27,7 @@ ul, ol {
 
 :root{
   --color-white: #FFFFFF;
+  --color-white-dark: #FFFFFFCC;
   --color-red: #E41F05;
   --color-grey: #505050;
   --color-blue: #2196f3;
