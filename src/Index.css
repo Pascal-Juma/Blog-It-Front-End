@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+:root{
+  --color-white: #FFFFFF;
+  --color-red: #E41F05;
+  --color-grey: #505050;
+  --b: .1rem solid var(--color-red);
+}

@@ -1,0 +1,20 @@
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: var(--b);
+  padding-inline: 3rem;
+}
+
+.header-logo {
+  border: var(--b);
+}
+.links-items{
+  display: flex;
+  gap: 2rem;
+}
+.links-items li a{
+  color: var(--color-grey);
+  font-size: 3rem;
+  
+}
