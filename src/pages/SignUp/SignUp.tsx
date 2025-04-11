@@ -19,7 +19,7 @@ const SignUpCta = styled(Button)<ButtonProps>(({ theme }) => ({
   }
 }));
 
-const SignInCta = styled(Button)<ButtonProps>(({ theme }) => ({
+const SignInCta = styled(Button)<ButtonProps>(() => ({
     fontSize: '1.5rem',
     fontFamily: 'var(--primary-font)',
     fontWeight: 400,
