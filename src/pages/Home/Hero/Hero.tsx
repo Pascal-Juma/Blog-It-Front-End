@@ -27,8 +27,8 @@ function Hero() {
           <div className="hero-cta">
           <HeaderCta variant="contained"  component="a" href="#" sx={{ textTransform:  'capitalize'}}>Get Started <FaLongArrowAltRight />
           </HeaderCta>
-          <Button variant="text" component="a" href="#" sx={{ textTransform:  'capitalize', fontSize: '1.8rem', fontFamily: 'var(--primary-font)', fontWeight: 400, color: 'var(--color-blue)' }}>
-            Find Stories</Button>
+          <Button variant="text" component="a" href="#" sx={{ textTransform:  'capitalize', fontSize: '1.8rem', fontFamily: 'var(--primary-font)', fontWeight: 400, color: 'var(--color-blue)'}}>
+            Find top Stories</Button>
           </div>
         </div>
       </section>
